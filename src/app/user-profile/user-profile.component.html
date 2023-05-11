@@ -1,17 +1,15 @@
-<p>user-profile works!</p>
-
 <div class="container">
 
     <div>
-        <img [src]="user.photo" [alt]="user.quote">
+        <img [src]="user.photo" alt="Photo">
     </div>
 
     <div>
         <h1>
-            Nom : Doe
+            Nom : {{user.name}}
         </h1>
         <h1>
-            Prénom : John
+            Prénom : {{user.firstName}}
         </h1>
     </div>
 
@@ -25,7 +23,7 @@
 
     <div [ngClass]="{'is-hidden': isHiddenAge}">
         <h1>
-            Age: 15
+            Age: {{user.age}}
         </h1>
     </div>
 
